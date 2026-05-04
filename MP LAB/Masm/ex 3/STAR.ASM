@@ -1,0 +1,69 @@
+CODE SEGMENT
+    ASSUME CS:CODE
+START:
+    MOV AH,00H
+    MOV AL,03H
+    INT 10H
+    MOV AH,02H
+    MOV BH,00H
+    MOV DH,05H
+    MOV DL,10H
+    INT 10H
+    MOV AH,09H
+    MOV AL,'*'
+    MOV BH,00H
+    MOV BL,07H
+    MOV CX,0001H
+    INT 10H
+    MOV AH,02H
+    MOV BH,00H
+    MOV DH,06H
+    MOV DL,0FH
+    INT 10H
+    MOV AH,09H
+    MOV AL,'*'
+    MOV BH,00H
+    MOV BL,07H
+    MOV CX,0003H
+    INT 10H
+    MOV AH,02H
+    MOV BH,00H
+    MOV DH,07H
+    MOV DL,10H
+    INT 10H
+    MOV AH,09H
+    MOV AL,'*'
+    MOV BH,00H
+    MOV BL,07H
+    MOV CX,0001H
+    INT 10H
+    MOV AH,02H
+    MOV BH,00H
+    MOV DH,08H
+    MOV DL,10H
+    INT 10H
+    MOV AH,09H
+    MOV AL,'*'
+    MOV BH,00H
+    MOV BL,07H
+    MOV CX,0001H
+    INT 10H
+    MOV AH,02H
+    MOV BH,00H
+    MOV DH,09H
+    MOV DL,0FH
+    INT 10H
+    MOV AH,09H
+    MOV AL,'*'
+    MOV BH,00H
+    MOV BL,07H
+    MOV CX,0003H
+    INT 10H
+    MOV AH,4CH
+    INT 21H
+CODE ENDS
+END 
+
+
+
+
